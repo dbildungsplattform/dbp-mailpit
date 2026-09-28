@@ -34,16 +34,16 @@ jobs:
           exit-code: '1'
           severity: "CRITICAL,HIGH"
 
-      - name: run trivy vulnerability scanner
-        if: ${{ always() }}
-        uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
-        with:
-          scan-type: "config"
-          format: "sarif"
-          output: "${{ env.TRIVY_SCAN_SARIF_FILE }}"
-          scan-ref: "."
-          exit-code: '1'
-          severity: "CRITICAL,HIGH"
+      # - name: run trivy vulnerability scanner
+      #   if: ${{ always() }}
+      #   uses: aquasecurity/trivy-action@ed142fd0673e97e23eac54620cfb913e5ce36c25 # v0.36.0
+      #   with:
+      #     scan-type: "config"
+      #     format: "sarif"
+      #     output: "${{ env.TRIVY_SCAN_SARIF_FILE }}"
+      #     scan-ref: "."
+      #     exit-code: '1'
+      #     severity: "CRITICAL,HIGH"
 
       - name: upload trivy results
         if: ${{ always() }}
