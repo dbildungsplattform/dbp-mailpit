@@ -69,8 +69,8 @@ jobs:
       group: helm_release
       cancel-in-progress: false
     needs:
-     - scan_helm
-     - get_tag
+      - scan_helm
+      - get_tag
     steps:
       - name: Checkout Code
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1

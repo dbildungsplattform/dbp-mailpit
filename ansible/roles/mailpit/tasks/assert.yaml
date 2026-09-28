@@ -70,4 +70,3 @@
       - "mailpit_storage_size is string"
       - "mailpit_storage_class_name | length > 0 or mailpit_storage_enabled is not true"
       - "mailpit_storage_size | length > 0 or mailpit_storage_enabled is not true"
-    
