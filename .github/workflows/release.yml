@@ -56,7 +56,7 @@ jobs:
 
   # Helm Chart
   scan_helm:
-    uses: dBildungsplattform/dbp-github-workflows/.github/workflows/check-helm-kics.yaml@c3bea3c4173b08f8d0569d1fcbe232dbf323bb8c # 8.3.1
+    uses: dBildungsplattform/dbp-github-workflows/.github/workflows/check-helm-kics.yaml@e9e45f555151092bd122ffc15e78320065e131e5 # 8.6.1
     permissions:
       contents: read
 
